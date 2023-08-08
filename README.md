@@ -81,7 +81,7 @@ Reasons are either PhoneLib just make best efforts for formatting and not format
 
 As a wrapper we did not change any code of PhoneLib itself, so an upgrade to the newest version should be possible by just updating the version in the dependency POM definition.
 
-For normalizing a phone number you should just use the our PhoneNumberNormalizer either bei Dependency injection or directly with its implementation like:
+For normalizing a phone number you should just use the our PhoneNumberNormalizer either by Dependency injection or directly with its implementation like:
 
 ```
 String number = "20355555";
@@ -122,7 +122,7 @@ This as been fixed by [issue tracker 182490059](https://issuetracker.google.com/
 But for the EU Social Service Number Range 116xxx, PhoneLib is only checking the assigned number 116116 in Germany.
 This is in contradiction to normal validation, where the range is checked and assignment checks are explicitly not in scope.
 But for the [issue 183669955](https://issuetracker.google.com/u/1/issues/183669955), they insist on assignment, since they need it for free call checks.
-But for other EU states PhoneLib is using the full raneg (e.g. [CZ](https://github.com/google/libphonenumber/blob/4c532d93587d2f9d16dc7a536df55bf179158210/resources/ShortNumberMetadata.xml#L3342))
+But for other EU states PhoneLib is using the full range (e.g. [CZ](https://github.com/google/libphonenumber/blob/4c532d93587d2f9d16dc7a536df55bf179158210/resources/ShortNumberMetadata.xml#L3342))
 
 ### One More Thing: Area Gecode Label
 
